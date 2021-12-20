@@ -203,7 +203,7 @@ if __name__ == "__main__":
         query = takeCommand().lower()
 
         # Logic for executing tasks based on query
-        if query == 'hey david':
+        if query == 'hey david' or 'hi david':
             speak('hello sir! How can I help you?')
             
             
