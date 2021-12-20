@@ -63,8 +63,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('omkar.kulkarni20@vit.edu', '12010457@ok')
-    server.sendmail('omkar.kulkarni20@vit.edu', to, content)
+    server.login('youremailid', 'password')
+    server.sendmail('receiversemailid', to, content)
     server.close()
     
 def waterReminder():
@@ -223,7 +223,7 @@ if __name__ == "__main__":
                     break
                 
                 if 'introduce yourself' in query:
-                    speak('''Hello! I am DAVID. I am a desktop assistance created by K1 group from VIT DESH 2021 for code with python course project. I can perform various taks like opening an app, setting reminder, open websites in browser, search in wikipedia, search a video in youtube, search a query in google and so on. Before telling me task you have to say, 'hey david' to enter task-mode, and after completion you have to say, 'thank you david', to exit task mode. In the same task mode you can ask me to play music or even to play a video on youtube and I will do it immediately. I can even send emails to specified clients. I can tell you the current time whenever you ask me in task-mode. I have some in built features like water reminder that will remind you to take a short break every 30 mins and word for the day feature that will show you a random english word with its meaning. To exit from the program say "goodbye david". Thank you! Special thanks to the developers of the modules and packages that were used in my creation.''')
+                    speak('''Hello! I am DAVID. I am a desktop assistance created by Omkar Kulkarni. I can perform various tasks like opening an app, setting reminder, open websites in browser, search in wikipedia, search a video in youtube, search a query in google and so on. Before telling me task you have to say, 'hey david' to enter task-mode, and after completion you have to say, 'thank you david', to exit task mode. In the same task mode you can ask me to play music or even to play a video on youtube and I will do it immediately. I can even send emails to specified clients. I can tell you the current time whenever you ask me in task-mode. I have some in built features like water reminder that will remind you to take a short break every 30 mins and word for the day feature that will show you a random english word with its meaning. To exit from the program say "goodbye david". Thank you! Special thanks to the developers of the modules and packages that were used in my creation.''')
                         
                 if 'thank you david' in query:
                     speak('You are welcome sir!')
